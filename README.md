@@ -32,3 +32,6 @@ One gotcha is that you must use -save before the environment name.
 For example `chenv -save hello` works.
 
 `chenv hello -save` does not.
+
+## Example Envs
+[Examples](.chenv)
