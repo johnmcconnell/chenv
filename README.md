@@ -1,37 +1,56 @@
 # chenv
-Change your envs with a single command.
+chenv is a completely overegineered program to change env files and
+manage env files.
+
+For example, times when developing you will want the change the
+environment of your application from **dev**, **staging**,
+**stress-test**, etc. It is as simple as:
+```
+$ chenv dev
+loaded .chenv/dev.env
+using:
+  * dev
+
+$
+```
 
 ## Usage
 
 ### Save
-Store your current .env file to a profile name of your choice.
-For this example dev.
-
+Store your current **.env** to a profile
 ```
-chenv -save dev
+$ chenv save dev
+saved current .env to .chenv/dev.env
+  dev saved!
+
+$
 ```
 
 ### Change
-Change your current .env file to a stored env.
-For this example dev.
+Change to **dev**
 
 ```
-chenv dev
+$ chenv dev
+loaded .chenv/dev.env
+using:
+  * dev
+
+$
 ```
 
 ### List
-List your stored envs
+List your envs
 
 ```
-chenv
+$ chenv
+view usage with: chenv -h
+available envs:
+  * dev
+    prod
+    test
+
+$
 ```
-
-## Gotchas
-One gotcha is that you must use -save before the environment name.
-
-For example `chenv -save hello` works.
-
-`chenv hello -save` does not.
 
 ## Example Envs
 [Examples](.chenv)

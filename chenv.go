@@ -184,6 +184,7 @@ func Chenv(env string) {
 		"cyan",
 	)
 	fmt.Println(envMsg)
+	fmt.Println()
 }
 
 // ErrExit ...
