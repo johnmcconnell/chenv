@@ -1,6 +1,5 @@
 # chenv
-chenv is a completely overegineered program to change env files and
-manage env files.
+chenv is a completely overegineered program to manage env files.
 
 For example, times when developing you will want the change the
 environment of your application from **dev**, **staging**,
